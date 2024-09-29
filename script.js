@@ -85,6 +85,11 @@ const startPauseBtnClickHandle = () => {
 };
 
 const resetBtnClickHandle = () => {
+  if (timeState !== 0) {
+    startBtn.classList.toggle("hidden");
+    pauseBtn.classList.toggle("hidden");
+  }
+
   pauseTime();
 
   timeState = 0;
