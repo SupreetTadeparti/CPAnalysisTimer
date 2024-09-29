@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Competitive Programming Timer</title>
+</head>
+
+<body>
+    <main class="container">
+        <section class="sw" id="think-sw">
+            <div class="sw__label">Thinking</div>
+            <div class="sw__time">00:00:00</div>
+        </section>
+        <div class="ctrl-btns">
+            <div id="start-pause-btn">
+                <img src="img/start.svg" alt="Start" id="start-btn">
+                <img src="img/pause.svg" alt="Pause" id="pause-btn" class="hidden">
+            </div>
+            <div id="reset-btn hidden">
+                <img src="img/reset.svg" alt="Reset" id="reset-btn">
+            </div>
+        </div>
+        <section class="sw" id="code-sw">
+            <div class="sw__time">00:00:00</div>
+            <div class="sw__label">Coding</div>
+        </section>
+    </main>
+</body>
+
+</html>

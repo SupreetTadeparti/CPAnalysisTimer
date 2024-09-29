@@ -1,0 +1,85 @@
+:root {
+  --think-clr: hsl(116, 38%, 55%);
+  --code-clr: hsl(215, 38%, 55%);
+  --secondary-clr: hsl(0, 0%, 70%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+html,
+body,
+.container {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--secondary-clr);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.sw {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#think-sw {
+  background-color: var(--think-clr);
+}
+
+#code-sw {
+  background-color: var(--code-clr);
+}
+
+.sw__time {
+  font-size: 1.5em;
+}
+
+.ctrl-btns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 1.5em;
+}
+
+.ctrl-btns > * {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 4px solid var(--secondary-clr);
+  background: white;
+  transition: scale 100ms ease-out;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.ctrl-btns img {
+  width: 1.25em;
+}
+
+.ctrl-btns img.hidden {
+  display: none;
+}
